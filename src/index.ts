@@ -3,7 +3,7 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 // import dotenv from 'dotenv';
-// import { env_entorno } from "./env";
+import { var_env } from "./config_env/index.js";
 // import http from 'http';
 // import { Server } from 'socket.io';
 
@@ -69,12 +69,10 @@ const pepe = (req: Request, res: Response)  =>  {
 
 app.use('/evento',pepe );
 
-// Levantar servidor
-const port = 4004;
-// const port = env_entorno.PORT || 4004;
+// running server
+const port = var_env.PORT;
 app.listen(port, () => {
-// server.listen(port, () => {
-    console.log(`🔥  🚀  Servidor Corriendo en el puerto ➡️ ${port}  ✔️`);
+    console.log(`🔥  🚀  Server running on port ➡️ ${port}  ✔️`);
 });
  
 // …después de crear io

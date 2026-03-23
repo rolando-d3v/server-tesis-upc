@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export const var_env = {
-  PORT: process.env.PORT || 4000,
+  PORT: process.env.PORT || 4001,
   SECRET_TOKEN: process.env.SECRET_TOKEN  || "secreto" ,
   // cloudinary config
   CLOUD_NAME: process.env.CLOUD_NAME,
