@@ -63,20 +63,20 @@ app.use(express.json());
 // app.use('/tipo_evento', tipo_eventoRoutes);
 
 
-const pepe = (req: Request, res: Response)  =>  {
+const pepe = (req: Request, res: Response) => {
     res.send('Hello World!');
 }
 
-app.use('/evento',pepe );
+app.use('/evento', pepe);
 
 // Levantar servidor
 const port = 4004;
 // const port = env_entorno.PORT || 4004;
 app.listen(port, () => {
-// server.listen(port, () => {
+    // server.listen(port, () => {
     console.log(`🔥  🚀  Servidor Corriendo en el puerto ➡️ ${port}  ✔️`);
 });
- 
+
 // …después de crear io
 // setupMediasoup(io);     
 // setupAlertasSocket(io);
