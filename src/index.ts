@@ -72,12 +72,11 @@ app.use('/evento', pepe);
 // running server
 const port = var_env.PORT;
 app.listen(port, () => {
-<<<<<<< HEAD
+
     // server.listen(port, () => {
     console.log(`🔥  🚀  Servidor Corriendo en el puerto ➡️ ${port}  ✔️`);
-=======
+
     console.log(`🔥  🚀  Server running on port ➡️ ${port}  ✔️`);
->>>>>>> 42e255ed2e974b8e4119ffe62299cd8ce0f0eb64
 });
 
 // …después de crear io
